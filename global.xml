@@ -1,0 +1,22 @@
+<configuration>
+  <ip>192.168.1.136</ip>
+  <printerip>192.168.1.133</printerip>
+  <filename>models/default</filename>
+  <smtp>smtp.server.com:25</smtp>
+  <subject>Scanned PDF</subject>
+  <source>scanner@yourdomain.com</source>
+  <menu>
+    <option>
+      <type>email</type><name>Testuser1</name>
+      <script>scantofile.sh</script><config>youremail@domain.com</config>
+    </option>
+    <option>
+      <type>email</type><name>Testuser2</name>
+      <script>scantofile.sh</script><config>other@domain.com</config>
+    </option>
+    <option>
+      <type>file</type><name>User</name>
+      <script>scantofile.sh</script><config>200</config>
+    </option>
+  </menu>
+</configuration>
